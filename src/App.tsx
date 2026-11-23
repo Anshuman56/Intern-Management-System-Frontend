@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard'
 import Interns from './pages/Interns'
 import Login from './pages/Login'
 import MyTasks from './pages/MyTasks'
+import Submissions from './pages/Submissions'
 import Tasks from './pages/Tasks'
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/interns" element={<Interns />} />
           <Route path="/tasks" element={<Tasks />} />
+          <Route path="/submissions" element={<Submissions />} />
         </Route>
       </Route>
 
