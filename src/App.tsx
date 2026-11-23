@@ -5,6 +5,7 @@ import ProtectedRoute from './components/ProtectedRoute'
 import Dashboard from './pages/Dashboard'
 import Interns from './pages/Interns'
 import Login from './pages/Login'
+import MyTasks from './pages/MyTasks'
 import Tasks from './pages/Tasks'
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
       <Route element={<ProtectedRoute role="intern" />}>
         <Route element={<Layout />}>
           <Route path="/my-dashboard" element={<Dashboard />} />
+          <Route path="/my-tasks" element={<MyTasks />} />
         </Route>
       </Route>
 
