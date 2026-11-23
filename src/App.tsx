@@ -3,6 +3,7 @@ import { homeFor, useAuth } from './auth/auth'
 import Layout from './components/Layout'
 import ProtectedRoute from './components/ProtectedRoute'
 import Dashboard from './pages/Dashboard'
+import Interns from './pages/Interns'
 import Login from './pages/Login'
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
       <Route element={<ProtectedRoute role="admin" />}>
         <Route element={<Layout />}>
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/interns" element={<Interns />} />
         </Route>
       </Route>
 
