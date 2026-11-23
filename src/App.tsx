@@ -5,6 +5,7 @@ import ProtectedRoute from './components/ProtectedRoute'
 import Dashboard from './pages/Dashboard'
 import Interns from './pages/Interns'
 import Login from './pages/Login'
+import Tasks from './pages/Tasks'
 
 export default function App() {
   const { user } = useAuth()
@@ -17,6 +18,7 @@ export default function App() {
         <Route element={<Layout />}>
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/interns" element={<Interns />} />
+          <Route path="/tasks" element={<Tasks />} />
         </Route>
       </Route>
 
